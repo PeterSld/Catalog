@@ -241,7 +241,29 @@
 						</span>
 									</div>
 			</div>
-
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+		  ...
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 			<div class="full_category">
 			<div class="pl-3" data-toggle="collapse" data-target="#id_cat_977" aria-expanded="false" aria-controls="id_cat_977">
 				<h3 class="font-600 pt-2" style="cursor:pointer">
@@ -259,12 +281,10 @@
 				<span class="text-danger font-18"> </span>
 				
 			
-			<div type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="modal_card" > 
+			<div type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#8192" > 
+				
 				<div class="unit_img mt-3 mb-3" style="background-image:url(https://th.foodmenu.online/images/food/8192_150.jpg?1622117116); width:80px; height:80px;"></div>
 				<div class="unit_info mt-1">
-					<a href="edit_food.php?id_food=8192" style="position:absolute; right:10px; top:5px;">
-						
-					</a>
 					<div style="padding-left: 10px; line-height: 12px;">
 						<div class="food_header" >
 							<img src="https://foodmenu.online/images/en.png" style="width:15px; box-shadow: 0 0 3px #808080; border-radius: 20px;">
@@ -293,6 +313,56 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade" id="8192" tabindex="-1" aria-hidden="true">
+				<div class="modal-dialog modal-fullscreen">
+				  <div class="modal-content">
+					<div class="modal-body">
+						<div class="unit_card mb-3"> 
+							<div class="unit_img mt-3 mb-3" style="background-image:url(https://th.foodmenu.online/images/food/8192_150.jpg?1622117116); width:80px; height:80px;"></div>
+							<div class="unit_info mt-1">
+							<a href="edit_food.php?id_food=8192" style="position:absolute; right:10px; top:5px;">
+								<i class="fas fa-pencil-alt"></i>
+							</a>
+								<div style="padding-left: 10px; line-height: 12px;">
+								<span class="sku_catalog">R1</span>
+								<div class="food_header">
+									<img src="/images/en.png" style="width:15px; box-shadow: 0 0 3px #808080; border-radius: 20px;">
+									Chicken roll 
+								</div>
+								<div class="food_content" style="padding-left:15px;">&nbsp; Toasted nan bread in Chicken kebab fresh vegetables and special sauce </div>
+								<span class="price_catalog"><span class="text-muted d-none">price:</span> 80 .-</span>
+								
+								<span class="sku_catalog">R1</span>
+								<div class="food_header" style="background: #ff000020;">
+									<img src="/images/ru.png" style="width:15px; box-shadow: 0 0 3px #808080; border-radius: 20px;">
+									
+								</div>
+								<div class="food_content" style="padding-left:15px;">&nbsp; </div>
+								<span class="price_catalog"><span class="text-muted d-none">price:</span> 80 .-</span>
+								
+								<span class="sku_catalog">R1</span>
+								<div class="food_header">
+									<img src="/images/tr.png" style="width:15px; box-shadow: 0 0 3px #808080; border-radius: 20px;">
+									Tavuk dürüm
+								</div>
+								<div class="food_content" style="padding-left:15px;">&nbsp; Taze kizarmis lavas icine tavuk döner taze sebzeler ve özel soslar</div>
+								<span class="price_catalog"><span class="text-muted d-none">price:</span> 80 .-</span>
+								
+								<span class="sku_catalog">R1</span>
+								<div class="food_header">
+									<img src="/images/th.png" style="width:15px; box-shadow: 0 0 3px #808080; border-radius: 20px;">
+									เคบับไก่
+								</div>
+								<div class="food_content" style="padding-left:15px;">&nbsp; </div>
+								<span class="price_catalog"><span class="text-muted d-none">price:</span> 80 .-</span>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
 			<div class="unit_card mb-3 col-12 unit"  > 
 				<div class="unit_img mt-3 mb-3" style="background-image:url(https://th.foodmenu.online/images/food/8193_150.jpg?1622125921); width:80px; height:80px;"></div>
 				<div class="unit_info mt-1">
