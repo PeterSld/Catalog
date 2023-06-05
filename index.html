@@ -61,8 +61,6 @@
 			<script src="https://foodmenu.online/plugins/owl/owl.carousel.min.js"></script>
 			<script src="https://foodmenu.online/plugins/magnificpopup/jquery.magnific-popup.min.js"></script>
 			<script src="https://kit.fontawesome.com/adaea234c6.js" crossorigin="anonymous"></script>
-			<script src="script.js"></script>
-		
 			<style>
 			#page_sidebar_inner > .nav-link > i { 
 				width: 1.5rem;
@@ -167,7 +165,7 @@
 					<div class="container-fluid px-0">
 			<style>
 
-.price_catalog, .sku_catalog {
+.price_catalog, .sku_catalog, .old_price_catalog{
 	/*
 	*/
     line-height: 18px;
@@ -178,7 +176,7 @@
 .unit_info{
 	width:calc(100%-90px)
 }
-.price_modal, .sku_modal{
+.price_modal, .sku_modal, .old_price_modal{
     line-height: 18px;
 	font-size: 18px;
     font-weight: 600;
@@ -197,7 +195,7 @@
 	background-position: center;
 	background-size: cover;
 }
-.food_content_modal{
+.food_content_modal_en, .food_content_modal_ru, .food_content_modal_tr, .food_content_modal_th{
 	color: gray;
     font-size: 16px;
     margin-bottom: 20px;
@@ -302,7 +300,7 @@
 							<div class="d-flex my-2">
 								<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> R1</span>
 								<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-								<span class="price_catalog me-3 old_price"><span class="text-muted">Old price:<br></span> 80 .-</span>
+								<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 							</div>
 					</div>
 				</div>
@@ -311,41 +309,41 @@
 				<div class="modal-dialog modal-dialog-centered">
 				  <div class="modal-content">
 						<div class="unit_card m-0 p-4" style="border-radius: 10px;"> 
-							<img class="unit_img_modal mt-3 mb-3 align-self-center rounded" src = "">
+							<div class="d-flex justify-content-center"><img class="unit_img_modal mt-3 mb-3 align-self-center rounded" src = ""></div>
 							<div class="unit_info mt-1" style="width: 100%;">
 							<div class="d-flex row">
 								<span class="sku_modal col-4"><span class="text-muted">SKU:</span><br> </span>
 								<span class="price_modal col-4"><span class="text-muted">Price:<br></span> </span>
-								<span class="price_modal col-4 old_price"><span class="text-muted">Old price:<br></span> </span>
+								<span class="old_price_modal col-4 "><span class="text-muted">Old price:<br></span> </span>
 							</div>
 							<hr style="width: 114%; margin: 1rem 0 1rem -7%">
 								<div style="padding-left: 10px; line-height: 12px;">
-								<div class="food_header_en">
+								<div class="food_header_modal_en">
 									<img src="https://foodmenu.online/images/en.png" style="width:15px; box-shadow: 0 0 3px #808080; border-radius: 20px;">
 									
 								</div>
 								<div class="food_content_modal_en" style="padding-left:15px;"></div>
 								
-								<div class="food_header" style="background: #ff000020;">
+								<div class="food_header_modal_ru" style="background: #ff000020;">
 									<img src="https://foodmenu.online/images/ru.png" style="width:15px; box-shadow: 0 0 3px #808080; border-radius: 20px;">
 									
 								</div>
-								<div class="food_content_modal" style="padding-left:15px;">&nbsp; </div>
+								<div class="food_content_modal_ru" style="padding-left:15px;">&nbsp; </div>
 								
-								<div class="food_header">
+								<div class="food_header_modal_tr">
 									<img src="https://foodmenu.online/images/tr.png" style="width:15px; box-shadow: 0 0 3px #808080; border-radius: 20px;">
 									Tavuk dürüm
 								</div>
-								<div class="food_content_modal" style="padding-left:15px;">&nbsp; Taze kizarmis lavas icine tavuk döner taze sebzeler ve özel soslar</div>
+								<div class="food_content_modal_tr" style="padding-left:15px;">&nbsp; Taze kizarmis lavas icine tavuk döner taze sebzeler ve özel soslar</div>
 								
-								<div class="food_header">
+								<div class="food_header_modal_th">
 									<img src="https://foodmenu.online/images/th.png" style="width:15px; box-shadow: 0 0 3px #808080; border-radius: 20px;">
 									เคบับไก่
 								</div>
-								<div class="food_content_modal" style="padding-left:15px;">&nbsp; </div>
+								<div class="food_content_modal_th" style="padding-left:15px;">&nbsp; </div>
 								<div class="row">
 									<a href="https://foodmenu.online/edit_food.php?id_food=8192" class="btn-outline-primary btn btn-lg col-6"> Edit food</a>
-									<button type="button" class="btn btn-lg btn-outline-secondary ms-2" style="width:48%" data-bs-dismiss="modal" aria-label="Close">Close</button>
+									<button type="button" class="btn btn-lg btn-outline-secondary ms-2" style="width:46%" data-bs-dismiss="modal" aria-label="Close">Close</button>
 								</div>
 								</div>
 							</div>
@@ -382,7 +380,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> R2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 100 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 100 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 100 .-</span>
 						</div>
 						
 					
@@ -418,7 +416,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> R3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -454,7 +452,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> R4</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -490,7 +488,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> R5</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -526,7 +524,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> R6</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -562,7 +560,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> R7</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -598,7 +596,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> R8</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -634,7 +632,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> R9</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -690,7 +688,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -726,7 +724,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -762,7 +760,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -798,7 +796,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S4</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -834,7 +832,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S5</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -870,7 +868,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S6</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -906,7 +904,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S7</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -942,7 +940,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S8</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -978,7 +976,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S8</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1014,7 +1012,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S9</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1051,7 +1049,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S10</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1088,7 +1086,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S11</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1125,7 +1123,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> S12</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1181,7 +1179,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> Set1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1217,7 +1215,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> Set2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1253,7 +1251,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> Set3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1289,7 +1287,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> Set4</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1325,7 +1323,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> Set5</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1381,7 +1379,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> B1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1417,7 +1415,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> B2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1453,7 +1451,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> B3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1489,7 +1487,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> B4</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1525,7 +1523,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> B5</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1561,7 +1559,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> P1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1597,7 +1595,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> P2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1633,7 +1631,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> P3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1689,7 +1687,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1725,7 +1723,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1761,7 +1759,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1797,7 +1795,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1833,7 +1831,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 4</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1869,7 +1867,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 5</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1905,7 +1903,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 6</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1941,7 +1939,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 7</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -1977,7 +1975,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 8</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2013,7 +2011,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 9</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2049,7 +2047,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 10</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2085,7 +2083,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 11</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2121,7 +2119,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 12</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2157,7 +2155,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 13</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2193,7 +2191,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 14</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2229,7 +2227,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 15</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2285,7 +2283,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2321,7 +2319,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2357,7 +2355,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2393,7 +2391,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 4</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2429,7 +2427,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 5</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2465,7 +2463,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 6</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2501,7 +2499,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 7</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2537,7 +2535,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 8</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2593,7 +2591,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2629,7 +2627,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2665,7 +2663,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2701,7 +2699,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 4</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2737,7 +2735,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 5</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2793,7 +2791,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2829,7 +2827,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2865,7 +2863,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2901,7 +2899,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 4</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2937,7 +2935,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 5</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -2993,7 +2991,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3029,7 +3027,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3065,7 +3063,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3101,7 +3099,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 4</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3137,7 +3135,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 6</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3193,7 +3191,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3229,7 +3227,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3265,7 +3263,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3321,7 +3319,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3357,7 +3355,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3413,7 +3411,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3449,7 +3447,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3485,7 +3483,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3512,7 +3510,7 @@
 				<span class="text-danger font-18"> </span>
 				
 			  
-			<div type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
+			<div id="8647" type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
 				<div class="unit_img mt-3 mb-3" style="background-image:url(https://th.foodmenu.online/images/food/8647_150.jpg?1623074667); width:80px; height:80px;"></div>
 				<div class="unit_info mt-1">
 				<a href="edit_food.php?id_food=8647" style="position:absolute; right:10px; top:5px;">
@@ -3541,14 +3539,14 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 8</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
 					</div>
 				</div>
 			</div>
-			<div type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
+			<div id="8182" type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
 				<div class="unit_img mt-3 mb-3" style="background-image:url(https://th.foodmenu.online/images/food/8182_150.jpg?1622104140); width:80px; height:80px;"></div>
 				<div class="unit_info mt-1">
 				<a href="edit_food.php?id_food=8182" style="position:absolute; right:10px; top:5px;">
@@ -3577,14 +3575,14 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> D1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
 					</div>
 				</div>
 			</div>
-			<div type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
+			<div id="8187" type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
 				<div class="unit_img mt-3 mb-3" style="background-image:url(https://th.foodmenu.online/images/food/8187_150.jpg?1622110649); width:80px; height:80px;"></div>
 				<div class="unit_info mt-1">
 				<a href="edit_food.php?id_food=8187" style="position:absolute; right:10px; top:5px;">
@@ -3613,14 +3611,14 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> D2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
 					</div>
 				</div>
 			</div>
-			<div type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
+			<div id="8188" type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
 				<div class="unit_img mt-3 mb-3" style="background-image:url(https://th.foodmenu.online/images/food/8188_150.jpg?1622111103); width:80px; height:80px;"></div>
 				<div class="unit_info mt-1">
 				<a href="edit_food.php?id_food=8188" style="position:absolute; right:10px; top:5px;">
@@ -3649,14 +3647,14 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> D3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
 					</div>
 				</div>
 			</div>
-			<div type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
+			<div id="8189" type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
 				<div class="unit_img mt-3 mb-3" style="background-image:url(https://th.foodmenu.online/images/food/8189_150.jpg?1622111419); width:80px; height:80px;"></div>
 				<div class="unit_info mt-1">
 				<a href="edit_food.php?id_food=8189" style="position:absolute; right:10px; top:5px;">
@@ -3685,14 +3683,14 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> D4</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
 					</div>
 				</div>
 			</div>
-			<div type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
+			<div id="8190" type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
 				<div class="unit_img mt-3 mb-3" style="background-image:url(https://th.foodmenu.online/images/food/8190_150.jpg?1622111790); width:80px; height:80px;"></div>
 				<div class="unit_info mt-1">
 				<a href="edit_food.php?id_food=8190" style="position:absolute; right:10px; top:5px;">
@@ -3721,14 +3719,14 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> D5</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
 					</div>
 				</div>
 			</div>
-			<div type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
+			<div id="8191" type="button" class="unit_card mb-3 col-12 unit" data-bs-toggle="modal" data-bs-target="#dish_modal"  > 
 				<div class="unit_img mt-3 mb-3" style="background-image:url(https://th.foodmenu.online/images/food/8191_150.jpg?1622111889); width:80px; height:80px;"></div>
 				<div class="unit_info mt-1">
 				<a href="edit_food.php?id_food=8191" style="position:absolute; right:10px; top:5px;">
@@ -3757,7 +3755,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> D6</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3813,7 +3811,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 1</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3849,7 +3847,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 2</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3885,7 +3883,7 @@
 						<div class="d-flex my-2">
 							<span class="sku_catalog me-3"><span class="text-muted">SKU:</span><br> 3</span>
 							<span class="price_catalog me-3"><span class="text-muted">Price:<br></span> 80 .-</span>
-							<span class="price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
+							<span class="old_price_catalog me-3"><span class="text-muted">Old price:<br></span> 80 .-</span>
 						</div>
 						
 					
@@ -3929,5 +3927,6 @@ navigator.serviceWorker.getRegistrations().then(function(registrations) {
 <script> 
 	const array_food_cat = {"977":{"id_category":"977","zone":null,"en":"Kebab rolls","ru":"Shaurma ","th":"เคบับโรล","tr":"Dürümler","ava":null,"photo":null},"978":{"id_category":"978","zone":null,"en":"Drinks","ru":"Напитки","th":"","tr":"İcecekler","ava":null,"photo":null},"996":{"id_category":"996","zone":null,"en":"Starters","ru":"","th":"ออเดิร์ฟ","tr":"Başlangıçlar","ava":null,"photo":null},"1004":{"id_category":"1004","zone":null,"en":"Set menu’s ","ru":"","th":"เมนูเชตสุดคุ้ม","tr":"Menüler","ava":null,"photo":null},"1005":{"id_category":"1005","zone":null,"en":"Pita kebab and sandwiches ","ru":"","th":"ขนมปังพีต้าและขนมปังฝรั่งเศส","tr":"Ekmek arasi gobit döner sandviçler ","ava":null,"photo":null},"1010":{"id_category":"1010","zone":null,"en":" Main Dishes","ru":"","th":"อาหารจานหลัก","tr":"Ana yemekler","ava":null,"photo":null},"1025":{"id_category":"1025","zone":null,"en":"Master Kebab Specials ","ru":"","th":"มาสเตอร์เคบับอาหารพิเศษ","tr":"Master specials","ava":null,"photo":null},"1027":{"id_category":"1027","zone":null,"en":"Turkish Special Dishes ","ru":"","th":"อาหารตุรกีจานพิเศษ","tr":"Master Kebap özel mutfağı ","ava":null,"photo":null},"1028":{"id_category":"1028","zone":null,"en":"Turkish Pizza’s ","ru":"","th":"พิซซ่าตุรกี","tr":"Pide ve Pizza çeşitleri ","ava":null,"photo":null},"1029":{"id_category":"1029","zone":null,"en":"Salad’s ","ru":"","th":"สลัด","tr":"Salatalar","ava":null,"photo":null},"1030":{"id_category":"1030","zone":null,"en":"Desserts ","ru":"","th":"ของหวาน","tr":"Tatlilar","ava":null,"photo":null},"1031":{"id_category":"1031","zone":null,"en":"Breads","ru":"","th":"ขนมปัง","tr":"Ekmek cesitleri","ava":null,"photo":null},"1032":{"id_category":"1032","zone":null,"en":"Turkish Mezze’s","ru":"","th":"อาหารเรียกน้ำย่อยตุรกี","tr":"Mezeler","ava":null,"photo":null},"1033":{"id_category":"1033","zone":null,"en":"PIZZA’S","ru":"","th":"พิซซ่า","tr":"Pizza cesitleri ","ava":null,"photo":null},"1049":{"id_category":"1049","zone":null,"en":"Hot Drinks ","ru":"","th":"เครื่องดื่มร้อน","tr":"Sicak icecekler","ava":null,"photo":null}};
 </script> 
-	
+<script src="script.js"></script>
+		
 </body>
